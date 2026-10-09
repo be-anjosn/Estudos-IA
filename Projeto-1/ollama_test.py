@@ -1,3 +1,9 @@
+#
+#git add Projeto-1/
+#git commit -m "Sua mensagem sobre o que mudou no projeto"
+#git push origin main#
+# 
+
 import ollama
 
 mensagem_utilizador = {
@@ -7,7 +13,7 @@ mensagem_utilizador = {
 
 # Atualizado para o modelo exato que está a rodar
 resposta = ollama.chat(
-    model='llama3.1:8b', 
+    model='llama3.2:1b', 
     messages=[mensagem_utilizador]
 )
 
