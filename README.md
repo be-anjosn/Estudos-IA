@@ -15,13 +15,24 @@ Explore my theoretical summaries via the links below:
 
 ---
 
+## 🚀 Projects
+
+Practical implementations and real-world pipelines developed to apply AI concepts:
+
+*   **[Project-1: Helpdesk AI Analyzer](https://github.com/be-anjosn/Estudos-IA/tree/main/Projeto-1)**  
+    An end-to-end feedback analysis pipeline leveraging local LLMs via Ollama to evaluate customer reviews, enforce strict data validation with Pydantic, and export clean, structured metrics into CSV format.  
+    Detailed project specifications, step-by-step notes, and roadmap are documented on Notion:  
+    👉 [📋 Project 1 — Notion Workspace](https://app.notion.com/p/P-gina-de-Estudos-3f32d68c3578808aa995d67ea3afd9fe?source=copy_link)
+
+---
+
 ## 🛠️ Technologies & Tools Used
 
 *   **Language:** Python
 *   **Data Manipulation:** Pydantic, Pandas, NumPy
 *   **Data Visualization:** Matplotlib, Seaborn
 *   **File Handling:** Built-in csv module (DictReader, DictWriter), Safe Context Management (with open)
-*   **Artificial Intelligence & LLMs:** Google GenAI SDK, Tool/Function Calling, Structured Outputs, Type-driven Prompt Engineering
+*   **Artificial Intelligence & LLMs:** Google GenAI SDK, Ollama, Tool/Function Calling, Structured Outputs, Type-driven Prompt Engineering
 *   **Environment & Knowledge Management:** Notion, Google Colab (including secrets and API key management with userdata)
 
 ---
