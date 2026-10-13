@@ -11,7 +11,7 @@ Check Notion Documentation at [🟦 Notion - Project 1 ](https://app.notion.com/
 ## 📁 Project Structure
 
 ```text
-Projeto-1/
+Project-1/
 ├── data/
 │   ├── incoming_feedback.csv   # Raw input feedback data
 │   └── output_feedback.csv     # Structured, validated output results
@@ -59,22 +59,22 @@ Projeto-1/
 
 ---
 
-### 2. Download Only the `Projeto-1` Directory
+### 2. Download Only the `Project-1` Directory
 
-To download solely the `Projeto-1` subfolder instead of the entire repository, run:
+To download solely the `Project-1` subfolder instead of the entire repository, run:
 
 ```bash
-git clone --depth 1 --filter=blob:none --sparse [https://github.com/be-anjosn/Estudos-IA.git](https://github.com/be-anjosn/Estudos-IA.git)
+git clone --depth 1 --filter=blob:none --sparse https://github.com/be-anjosn/Estudos-IA.git
 cd Estudos-IA
-git sparse-checkout set Projeto-1
-cd Projeto-1
+git sparse-checkout set Project-1
+cd Project-1
 ```
 
 ---
 
 ### 3. Configure the Python Environment
 
-1. Create and activate a virtual environment inside the `Projeto-1` folder:
+1. Create and activate a virtual environment inside the `Project-1` folder:
    - **Windows (PowerShell)**:
      ```powershell
      python -m venv venv
