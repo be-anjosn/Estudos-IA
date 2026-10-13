@@ -5,6 +5,7 @@ Automated pipeline for batch processing customer reviews using local Large Langu
 The system reads raw reviews from a CSV file, processes each entry using a local LLM to extract sentiment and customer service metrics, validates data consistency, and exports the structured results to a new CSV file.
 
 Check Notion Documentation at [🟦 Notion - Project 1 ](https://app.notion.com/p/Project-1-Python-Pydantic-3f32d68c3578801bb0a1f3e07c36a440?source=copy_link)
+
 ---
 
 ## 📁 Project Structure
