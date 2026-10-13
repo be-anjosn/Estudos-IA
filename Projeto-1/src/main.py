@@ -1,28 +1,28 @@
 import csv
 import Models
 from pydantic import ValidationError
-from AI import passando_pela_IA
+from AI import ai_generation
 
 
-arquivo_origem = "../data/feedbacks_entrada.csv"
-lista_feedbacks=[]
-with open(arquivo_origem, mode="r", encoding="utf-8") as file_in:
-    leitor = csv.DictReader(file_in, delimiter=",")
-    for linha in leitor:
+source_file = "../data/incoming_feedback.csv"
+list_feedbacks=[]
+with open(source_file, mode="r", encoding="utf-8") as file_in:
+    reader = csv.DictReader(file_in, delimiter=",")
+    for line in reader:
         try:
-            resposta_texto = passando_pela_IA(linha)
-            dados = Models.AnaliseFeedback.model_validate_json(resposta_texto)
-            lista_feedbacks.append(dados.model_dump())
+            text_response = ai_generation(line)
+            data = Models.AnalyzeFeedback.model_validate_json(text_response)
+            list_feedbacks.append(data.model_dump())
         except ValidationError as e:
-            print("\n❌ O Pydantic bloqueou a IA! Capturamos o seguinte erro:")
+            print("\n❌ Pydantic blocked the AI! We caught the following error:")
             print(e)
             continue
 
 
-arquivo_destino="../data/feedbacks_saida.csv"
-with open(arquivo_destino, mode="w", encoding="utf-8") as file_out:
-    cabecalhos_origem = ["sentimento", "nota_atendimento", "resumo_curto"]
-    escritor_mock = csv.DictWriter(file_out, fieldnames=cabecalhos_origem)
-    escritor_mock.writeheader()
-    escritor_mock.writerows(lista_feedbacks)
+destination_file="../data/output_feedback.csv"
+with open(destination_file, mode="w", encoding="utf-8") as file_out:
+    source_headers = ["feeling", "customer_service_rating", "short_summary","name"]
+    mock_writer = csv.DictWriter(file_out, fieldnames=source_headers)
+    mock_writer.writeheader()
+    mock_writer.writerows(list_feedbacks)
 
