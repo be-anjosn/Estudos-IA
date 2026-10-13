@@ -1,8 +1,10 @@
 #
 #git add Projeto-1/
-#git commit -m "Sua mensagem sobre o que mudou no projeto"
-#git push origin main#
-# 
+#git commit -m "novos arquivos"
+#git push origin main
+#
+# This file is dedicated to test Ollama locally. If you don't have Ollama downloaded, please try the followin lines:
+#  
 
 import ollama
 
@@ -19,3 +21,4 @@ resposta = ollama.chat(
 
 print("Resposta do Ollama:")
 print(resposta['message']['content'])
+
