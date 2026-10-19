@@ -26,9 +26,7 @@ Practical implementations and real-world pipelines developed to apply AI concept
 
 -   **[Project-2: TaskFlow API with Local AI](https://github.com/be-anjosn/TaskFlow-API-with-Local-AI)**  
     A backend API service integrated with local LLMs via Ollama designed to streamline and automate task workflows, utilizing robust data validation and structured processing pipelines.  
-    Detailed project specifications, architecture, and notes are documented on Notion:  
-    👉 [📋 Project 2 — Notion Workspace](https://app.notion.com/p/P-gina-de-Estudos-3f32d68c3578808aa995d67ea3afd9fe?source=copy_link)
-
+ 
 ---
 
 ## 🛠️ Technologies & Tools Used
